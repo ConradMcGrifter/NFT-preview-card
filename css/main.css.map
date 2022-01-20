@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA;;mDAEmD;ACFnD;;mDAEmD;AAEnD,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,MAAM;CACrB;;ACND;;mDAEmD",
+    "sources": [
+        "../styles/main.scss",
+        "../styles/utils/_variables.scss",
+        "../styles/base/_base.scss",
+        "../styles/objects/_wrappers.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
