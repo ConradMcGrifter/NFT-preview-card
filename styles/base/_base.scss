@@ -2,6 +2,23 @@
     #BASE
 \*-----------------------------------------------*/
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: salmon;
+    min-height: 100%;
+    background: color(main-BG);
+    font-family: $font-stack;
+    font-size: 1.8rem;
 }

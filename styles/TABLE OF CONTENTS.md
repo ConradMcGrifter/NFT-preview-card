@@ -1,7 +1,9 @@
 -   CONTENTS:
 -
 -   UTILS
--   Variables..........colors
+-   Variables..........colors, font-stack
+-   Functions..........color map
+-   Mixins.............Flex-center
 -
 -   BASE
 -   Base...............html, body
