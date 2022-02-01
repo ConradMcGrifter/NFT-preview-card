@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 /* ----------------------------------------------*\
-    #VARIABLES
+    UTILS -> #VARIABLES
 \*-----------------------------------------------*/
 /* ----------------------------------------------*\
-    #BASE
+    UTILS -> #FUNCTIONS
+\*-----------------------------------------------*/
+/* ----------------------------------------------*\
+    UTILS -> #MIXINS
+\*-----------------------------------------------*/
+/* ----------------------------------------------*\
+    BASE -> #BASE
 \*-----------------------------------------------*/
 html {
   font-size: 62.5%;
@@ -22,13 +28,145 @@ html {
 }
 
 body {
-  min-height: 100%;
   background: #0d192b;
+  display: -ms-grid;
+  display: grid;
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
+  min-height: 100%;
+  place-items: center;
 }
 
 /* ----------------------------------------------*\
-    #WRAPPERS
+    COMPONENTS -> #AVATAR
 \*-----------------------------------------------*/
+.avatar {
+  border: solid white 0.2rem;
+  border-radius: 999px;
+  width: 100%;
+}
+
+/* ----------------------------------------------*\
+    COMPONENTS -> #CARD
+\*-----------------------------------------------*/
+.card {
+  background-color: #14253d;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.301);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.301);
+  padding: 2rem;
+  width: 33rem;
+}
+
+.cardImg-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.cardImg-wrap:hover .card__imgHover {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.card__imgHover {
+  background: url("../images/icon-view.svg") no-repeat center, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 247, 0.473)), to(rgba(0, 255, 247, 0.473)));
+  background: url("../images/icon-view.svg") no-repeat center, linear-gradient(rgba(0, 255, 247, 0.473), rgba(0, 255, 247, 0.473));
+  border-radius: 1rem;
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.card__img {
+  border-radius: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.card__title {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.card__title:hover {
+  color: #00fff7;
+}
+
+.card__info {
+  color: #8bacda;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+.cardPrice-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.card__price {
+  color: #00fff7;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card__price::before {
+  content: url("../images/icon-ethereum.svg");
+  position: relative;
+  top: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.card__duration {
+  color: #8bacda;
+  font-size: 1.6rem;
+}
+
+.card__duration::before {
+  content: url("../images/icon-clock.svg");
+  position: relative;
+  top: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.cardAuthor-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0.1rem solid #2f415b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 0;
+}
+
+.card__avatar {
+  width: 3.5rem;
+}
+
+.card__author {
+  color: #8bacda;
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card__name {
+  color: white;
+  cursor: pointer;
+}
+
+.card__name:hover {
+  color: #00fff7;
+}
 /*# sourceMappingURL=main.css.map */

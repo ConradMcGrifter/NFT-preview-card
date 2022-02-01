@@ -1,5 +1,5 @@
 /* ----------------------------------------------*\
-    #BASE
+    BASE -> #BASE
 \*-----------------------------------------------*/
 
 html {
@@ -17,8 +17,10 @@ html {
 }
 
 body {
-    min-height: 100%;
     background: color(main-BG);
+    display: grid;
     font-family: $font-stack;
     font-size: 1.8rem;
+    min-height: 100%;
+    place-items: center;
 }

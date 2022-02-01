@@ -1,12 +1,17 @@
 -   CONTENTS:
 -
--   UTILS
+
+# UTILS
+
 -   Variables..........colors, font-stack
 -   Functions..........color map
 -   Mixins.............Flex-center
--
--   BASE
+
+# BASE
+
 -   Base...............html, body
--
--   OBJECTS
--   Wrappers.........wrappers and containers
+
+# COMPONENTS
+
+-   card.............NFT card component
+-   avatar...........user avatar
