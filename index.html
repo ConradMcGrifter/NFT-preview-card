@@ -51,24 +51,26 @@
             </div>
         </div>
         <script>
-            const card = document.querySelector(".cardImg-wrap");
+            const card = document.querySelectorAll(".cardImg-wrap");
             const lightBox = document.querySelector(".lightbox");
             const lightBoxImg = document.querySelector(".lightbox__img");
             const lightBoxCloseBtn = document.querySelector(
                 ".lightbox__closeBtn"
             );
 
-            card.addEventListener("click", () => {
-                // toggle the lightbox to display
-                lightBox.classList.toggle("--is-active");
-                // get the src attribute of the card being clicked and add it to the lightbox backgroundImage
-                let imgSrc = card
-                    .querySelector(".card__img")
-                    .getAttribute("src");
+            card.forEach((card) => {
+                card.addEventListener("click", () => {
+                    // toggle the lightbox to display
+                    lightBox.classList.toggle("--is-active");
+                    // get the src attribute of the card being clicked and add it to the lightbox backgroundImage
+                    let imgSrc = card
+                        .querySelector(".card__img")
+                        .getAttribute("src");
 
-                lightBoxImg.style.backgroundImage = `url(${imgSrc})`;
+                    lightBoxImg.style.backgroundImage = `url(${imgSrc})`;
+                });
             });
-
+            // close lightbox when closeBtn is clicked
             lightBoxCloseBtn.addEventListener("click", () => {
                 lightBox.classList.toggle("--is-active");
             });

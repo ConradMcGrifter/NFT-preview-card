@@ -18,9 +18,11 @@ html {
 
 body {
     background: color(main-BG);
-    display: grid;
+    display: flex;
     font-family: $font-stack;
+    flex-wrap: wrap;
     font-size: 1.8rem;
     min-height: 100%;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
 }
