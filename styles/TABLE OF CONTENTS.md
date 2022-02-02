@@ -3,7 +3,7 @@
 
 # UTILS
 
--   Variables..........colors, font-stack
+-   Variables..........colors, font-stack, car-elements-margin
 -   Functions..........color map
 -   Mixins.............Flex-center
 
