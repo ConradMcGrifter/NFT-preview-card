@@ -89,8 +89,6 @@ body {
 
 .cardImg-wrap:hover .card__imgHover {
   opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
 }
 
 .card__imgHover {
@@ -100,6 +98,8 @@ body {
   inset: 0;
   opacity: 0;
   position: absolute;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .card__img {
