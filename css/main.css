@@ -43,6 +43,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1.5rem;
+}
+
+.grid {
+  width: 75%;
+  min-width: 33rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(325px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  grid-auto-flow: dense;
+  justify-items: center;
 }
 
 /* ----------------------------------------------*\
@@ -63,11 +76,7 @@ body {
   -webkit-box-shadow: 0 10px 75px rgba(0, 0, 0, 0.233);
           box-shadow: 0 10px 75px rgba(0, 0, 0, 0.233);
   padding: 2rem;
-  width: 33rem;
-}
-
-.card + .card {
-  margin-left: 2rem;
+  max-width: 33rem;
 }
 
 .cardImg-wrap {
