@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".cardImg-wrap");
+const cards = document.querySelectorAll(".card__img-wrapper");
 const lightBox = document.querySelector(".lightbox");
 const lightBoxImg = document.querySelector(".lightbox__img");
 const lightBoxCloseBtn = document.querySelector(".lightbox__closeBtn");

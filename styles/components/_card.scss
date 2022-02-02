@@ -10,7 +10,7 @@
     max-width: 33rem;
 }
 
-.cardImg-wrap {
+.card__img-wrapper {
     position: relative;
     cursor: pointer;
 
@@ -19,7 +19,7 @@
     }
 }
 
-// this is the element that gets displayed when the "cardImg-wrap" is hovered
+// this is the element that gets displayed when the "card__img-wrapper" is hovered
 .card__imgHover {
     background: url("../images/icon-view.svg") no-repeat center,
         linear-gradient(
@@ -60,7 +60,7 @@
 }
 
 // this wraps the price and duration elements
-.cardPrice-wrap {
+.card__priceDetails-wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -93,7 +93,7 @@
 }
 
 // this wraps the author name + avatar
-.cardAuthor-wrap {
+.card__creator-wrapper {
     align-items: center;
     border-top: 0.1rem solid color(line);
     display: flex;

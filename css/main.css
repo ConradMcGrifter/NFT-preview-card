@@ -82,12 +82,12 @@ body {
   max-width: 33rem;
 }
 
-.cardImg-wrap {
+.card__img-wrapper {
   position: relative;
   cursor: pointer;
 }
 
-.cardImg-wrap:hover .card__imgHover {
+.card__img-wrapper:hover .card__imgHover {
   opacity: 1;
 }
 
@@ -128,7 +128,7 @@ body {
   margin-top: 1.5rem;
 }
 
-.cardPrice-wrap {
+.card__priceDetails-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -166,7 +166,7 @@ body {
   margin-right: 0.5rem;
 }
 
-.cardAuthor-wrap {
+.card__creator-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
