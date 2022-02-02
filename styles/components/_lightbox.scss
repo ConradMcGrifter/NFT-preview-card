@@ -1,0 +1,40 @@
+/* ----------------------------------------------*\
+    COMPONENTS -> #LIGHTBOX
+\*-----------------------------------------------*/
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: hsl(213, 48%, 5%);
+    display: none;
+
+    &.--is-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.lightbox__img {
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    //background url is set with javaScript
+}
+
+.lightbox__closeBtn {
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        color: color(text-highlight);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .lightbox__img {
+        width: 325px;
+        height: 400px;
+    }
+}

@@ -44,5 +44,34 @@
                 </p>
             </div>
         </div>
+        <div class="lightbox">
+            <div class="lightboxImg-wrap">
+                <div class="lightbox__img"></div>
+                <p class="lightbox__closeBtn">close</p>
+            </div>
+        </div>
+        <script>
+            const card = document.querySelector(".cardImg-wrap");
+            const lightBox = document.querySelector(".lightbox");
+            const lightBoxImg = document.querySelector(".lightbox__img");
+            const lightBoxCloseBtn = document.querySelector(
+                ".lightbox__closeBtn"
+            );
+
+            card.addEventListener("click", () => {
+                // toggle the lightbox to display
+                lightBox.classList.toggle("--is-active");
+                // get the src attribute of the card being clicked and add it to the lightbox backgroundImage
+                let imgSrc = card
+                    .querySelector(".card__img")
+                    .getAttribute("src");
+
+                lightBoxImg.style.backgroundImage = `url(${imgSrc})`;
+            });
+
+            lightBoxCloseBtn.addEventListener("click", () => {
+                lightBox.classList.toggle("--is-active");
+            });
+        </script>
     </body>
 </html>
