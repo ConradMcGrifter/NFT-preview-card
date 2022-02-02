@@ -1,0 +1,13 @@
+/* ----------------------------------------------*\
+    CONTAINERS -> #CARDS-GRID
+\*-----------------------------------------------*/
+
+.grid {
+    width: 75%;
+    min-width: 33rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-auto-flow: dense;
+    justify-items: center;
+}
