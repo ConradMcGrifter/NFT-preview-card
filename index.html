@@ -275,11 +275,11 @@
                 card.addEventListener("click", () => {
                     // toggle the lightbox to display
                     lightBox.classList.toggle("--is-active");
-                    // get the src attribute of the card being clicked and add it to the lightbox backgroundImage
+                    // get the src attribute from the image of the card being clicked
                     let imgSrc = card
                         .querySelector(".card__img")
                         .getAttribute("src");
-
+                    // add the img src to the background-image url
                     lightBoxImg.style.backgroundImage = `url(${imgSrc})`;
                 });
             });
