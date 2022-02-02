@@ -15,3 +15,4 @@
 
 -   card.............NFT card component
 -   avatar...........user avatar
+-   lightbox.........displays larger image of the card component image
