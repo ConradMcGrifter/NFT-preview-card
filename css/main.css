@@ -60,8 +60,8 @@ body {
 .card {
   background-color: #14253d;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.301);
-          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.301);
+  -webkit-box-shadow: 0 10px 75px rgba(0, 0, 0, 0.233);
+          box-shadow: 0 10px 75px rgba(0, 0, 0, 0.233);
   padding: 2rem;
   width: 33rem;
 }
